@@ -17,10 +17,6 @@ module.exports = function (app) {
     var differenceArray = [];
     var bestIndex;
 
-    console.log("newFriendScores.length", newFriendScores.length);
-    console.log("friendList.length", friendList.length);
-    console.log("frinedList", friendList);
-
     for (var i = 0; i < friendList.length; i++) {
       for (var j = 0; j < 10; j++) {
         console.log("parseInt(newFriendScores[i]", parseInt(newFriendScores[j]));
@@ -37,19 +33,7 @@ module.exports = function (app) {
       console.log("friendList[i]", friendList[i]);
       console.log("currentBest", currentBest);
       if (difference < currentBest) {
-       
-        // var matchName = friendList[i].name;
-        // var matchPic = friendList[i].photo;
-
-        
-         
-        console.log("matchName", friendList[i].name);
-        console.log("matchPic", friendList[i].photo);
-        console.log("i", i);
         bestIndex = i;
-        console.log("index@@@@@@@@@@@@@@@@@@@", bestIndex);
-
-
         currentBest = difference;
         differenceArray = [];
       }
